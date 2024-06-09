@@ -1,0 +1,46 @@
+
+---------------------------------------------------------------Part 1
+https://youtu.be/L-FyeHQwo4U
+
+1 встановлюємо віртуальне оточення > python - m venv venv
+2 Активуємо віртуальне оточення > venv\Scripts\activate
+
+
+https://pypi.org/
+
+3 pip unstall django
+
+
+---------------------------------------------------------------- Part 2
+https://youtu.be/QaxLpuDWvZI
+
+django-admin
+
+4  створюємо проект на django
+
+(venv) D:\GitHub\study_django_from_it_proger\web-app>django-admin startproject umanproger
+
+5 Запуск локального сервера
+
+(venv) D:\GitHub\study_django_from_it_proger\web-app\umanproger>python manage.py runserver
+
+6 Вихід з локального сервера
+
+ctrl + c
+
+
+
+
+------------------------------------------------------------------ Part 3
+
+https://youtu.be/2Xbhiw1AZO0
+
+7 
+Створюємо   > python manage.py startapp main
+
+8 Реєструємо новий додаток в INSTALL_APPS
+umanproger > settings.py >  INSTALL_APPS > додаємо - main
+
+17 : 00
+
+
