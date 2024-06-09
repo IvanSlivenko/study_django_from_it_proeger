@@ -1,0 +1,2 @@
+# study_django_from_it_proeger
+study_django_from_it_proeger
