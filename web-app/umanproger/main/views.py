@@ -9,3 +9,6 @@ def about(request):
 
 def contacts(request):
     return HttpResponse("<h4>test contacts</h4>")
+
+def test(request):
+    return render(request, 'main/test.html')
