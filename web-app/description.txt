@@ -54,7 +54,60 @@ render()
 в середині папки templates створюємо папку з назвою додатку - main
 в середині папки main створюємо index.html
 
+
+
+
+jinja
+
+{% extends "main/layout.html" %}
+
+{% block content%}
+
+    <h1>Головна сторінка</h1>
+    <p>Головна сторінка</p>
+
+{% endblock %}
+
+{% include "main/some_file" %}
+
+
+
 00 : 19
+
+------------------------------------------------------------------- and Part 4
+
+
+------------------------------------------------------------------- Part 5
+
+https://youtu.be/OYeqcxaYUbQ?list=RDCMUCCXF68Da_ndcmvv_9OG75Cw
+
+Bootstrap
+
+https://www.bootstrapcdn.com/
+
+
+
+static
+
+https://docs.djangoproject.com/en/5.0/howto/static-files/
+
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+    # "/var/www/static/",
+]
+
+ + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+ fontawesomefree
+
+ pip install fontawesomefree
+
+
+13  : 15
+
+------------------------------------------------------------------- end Part 5
+
+
 
 
 
