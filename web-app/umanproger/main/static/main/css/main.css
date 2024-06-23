@@ -37,7 +37,7 @@ aside img {
     }
 
 .aside_img_icon:hover {
-        background: #eb5959;
+        background: yellow;
     }
    
 aside .logo {
@@ -68,7 +68,7 @@ aside ul li {
 
 aside ul li:hover, 
 aside ul a:hover {
-    color: #eb5959;
+    color: yellow;
     text-decoration: none;
     transform: scale(1.05);
 
@@ -93,3 +93,71 @@ main .features p {
     margin: 20px auto;
 
 }
+
+/* ----------- */
+
+test {
+    /* -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    list-style-type: none;
+    background-color: #f1f1f1;
+    width: 90%;
+    max-width: 35rem;
+    border-radius: 20px;
+    margin: 2rem auto;
+    padding: 1px; */
+
+    /* text-align: center;
+    width: 100%;
+    font-size: 3rem;
+    padding: 2rem 1rem; */
+
+    /* color: #e8dede;
+    text-align: center;
+    font-family: "Andale Mono", Andale Mono monospace;
+    font-size: 48px;
+    text-decoration: underline;
+    list-style: none;
+    color: gray;
+
+    color: #d2d2e5;
+    text-align: center;
+    font-family: "Comoc sana MS", "Comic Sans", cursive;
+    font-size: 30px;
+
+    color: #e8dede;
+    text-align: center;
+    font-family: "Geneva" Arial, Helvetica, sans-serif;
+    font-size: 40px;
+     */
+
+     text-align: center;
+     color: white;
+     font-size: 2rem;
+     height: 100%;
+     width: 200px;
+     position: fixed;
+     z-index: 1;
+     top: 0;
+     left: 0;
+     background-color: #111;
+     overflow-x: hidden;
+     padding-top: 20px ;
+
+     display: block;
+     font-size: 2rem;
+     margin: 20px;
+
+     color: gold;
+}
+
+/* li a:hover {
+    color: #2c2c2c;
+    text-decoration: underline;
+    font-size: 55px;
+
+    
+
+} */
+

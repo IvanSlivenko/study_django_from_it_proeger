@@ -22,9 +22,11 @@
     <span class="logo">UmanProger</span>
         <h3>Навігація </h3>
         <ul>
-            <a href="/" ><li><img src="{% static 'main/img/house-user-solid.svg' %}" alt="logo" class="aside_img_icon"><span> </span>Головна</li></a>
-            <a href="/about" ><li><img src="{% static 'main/img/address-card-solid.svg' %}" alt="logo" class="aside_img_icon"><span> </span>Про нас</li></a>
-            <a href="/contacts" ><li><img src="{% static 'main/img/telegram.svg' %}" alt="logo" class="aside_img_icon"><span> </span>Контакти</li></a>
+            <a href="{% url "home" %}" ><li><img src="{% static 'main/img/house-user-solid.svg' %}" alt="logo" class="aside_img_icon"><span> </span>Головна</li></a>
+            <a href="{% url "about" %}" ><li><img src="{% static 'main/img/address-card-solid.svg' %}" alt="logo" class="aside_img_icon"><span> </span>Про нас</li></a>
+            <a href="{% url "news_home" %}" ><li><img src="{% static 'main/img/news_icon.png' %}" alt="news" class="aside_img_icon"><span> </span>Новини</li></a>
+            <a href="{% url "contacts" %}" ><li><img src="{% static 'main/img/telegram.svg' %}" alt="logo" class="aside_img_icon"><span> </span>Контакти</li></a>
+            
         </ul>
     
    </aside>
