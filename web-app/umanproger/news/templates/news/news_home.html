@@ -1,4 +1,5 @@
 {% extends "main/layout.html" %}
+{% load static %}
 
 {% block title %}
     Новини на сайті
@@ -8,10 +9,25 @@
 <div class="features">
     <h1>Новини на сайті</h1>
     
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore architecto assumenda quam nostrum, accusantium reiciendis autem sunt. Soluta amet asperiores deleniti aut harum quidem, laboriosam cum, ipsum id qui voluptatem?</p>
-        <button class="btn btn-warning"> {% filter upper %}На сторінку про нас  {% endfilter %}</button>
-   
-   
+    {% if news %}
+
+        {% for element in news %}
+            <div class="alert alert-warning">
+            <div class="news_container">
+                    <h4 class="news_date">{{ element.date }}</h4>
+                    <h3 class="news_title">{{ element.title }}</h3>
+                    <p>{{ element.anons }}</p>
+                    {% comment %} <p>{{element.full_text}}</p> {% endcomment %}
+                </div>  
+            </div>
+        {% endfor %}
+        
+
+    {% else %}
+        <p>У вас немає новин </p>
+    {% endif %}    
+
+            {# коментарі #}
     
 </div>
 

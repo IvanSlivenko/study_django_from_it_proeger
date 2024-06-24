@@ -8,7 +8,8 @@ class Articles(models.Model):
     date = models.DateTimeField('Дата публікації')
 
     def __str__(self) -> str:
-        return self.title   
+        # return f' Новина: {self.title}'
+        return self.title     
     
     class Meta:
         verbose_name = 'Новина'

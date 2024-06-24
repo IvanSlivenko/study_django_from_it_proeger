@@ -26,7 +26,15 @@
             <a href="{% url "about" %}" ><li><img src="{% static 'main/img/address-card-solid.svg' %}" alt="logo" class="aside_img_icon"><span> </span>Про нас</li></a>
             <a href="{% url "news_home" %}" ><li><img src="{% static 'main/img/news_icon.png' %}" alt="news" class="aside_img_icon"><span> </span>Новини</li></a>
             <a href="{% url "contacts" %}" ><li><img src="{% static 'main/img/telegram.svg' %}" alt="logo" class="aside_img_icon"><span> </span>Контакти</li></a>
-            
+            <a href="{% url "create" %}" class="aside_a" >
+                <li>
+                    <button class="aside_btn">
+                        <img src="{% static 'main/img/data_icon.png' %}" alt="logo" class="aside_img_icon_button">
+                        Додати запис
+                    </button>
+                </li>
+            </a>
+                
         </ul>
     
    </aside>
