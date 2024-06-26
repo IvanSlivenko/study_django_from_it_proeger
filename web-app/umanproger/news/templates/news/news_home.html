@@ -17,7 +17,7 @@
                     <h4 class="news_date">{{ element.date }}</h4>
                     <h3 class="news_title">{{ element.title }}</h3>
                     <p>{{ element.anons }}</p>
-                    {% comment %} <p>{{element.full_text}}</p> {% endcomment %}
+                    <a href="{% url 'news-detail' element.id %}" class="btn btn-warning btn_news-detail">Читати детальніше</a>
                 </div>  
             </div>
         {% endfor %}
