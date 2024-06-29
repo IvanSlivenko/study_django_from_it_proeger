@@ -1,0 +1,21 @@
+{% extends "main/layout.html" %}
+{% load static %}
+
+{% block title %}
+    Форма для видалення статті
+{% endblock %}
+
+{% block content%}
+<div class="features">
+    <h1>Стаття "{{ article.title }}" буде видалена </h1>
+    
+    <form method="post">
+        {% csrf_token %}<br>
+        <button class="btn btn-success" type="submit">Видалити статтю</button>
+        <a href="{% url 'news_home'  %}" class="btn btn-info">Всі статті</a>
+
+    </form>
+    
+</div>
+
+{% endblock %}
